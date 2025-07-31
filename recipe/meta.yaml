@@ -35,6 +35,7 @@ outputs:
       build:
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
+        - {{ stdlib("c") }}
         - llvm-openmp  # [osx]
         - libgomp      # [linux]
         - autoconf
@@ -68,6 +69,7 @@ outputs:
       build:
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
+        - {{ stdlib("c") }}
         - llvm-openmp  # [osx]
         - libgomp      # [linux]
         - autoconf
@@ -125,6 +127,7 @@ outputs:
       build:
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
+        - {{ stdlib("c") }}
 
       host:
         # technically this ought to be in the 'build' requirements,
