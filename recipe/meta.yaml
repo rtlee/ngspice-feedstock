@@ -145,6 +145,7 @@ outputs:
       build:
         - {{ compiler('c') }}
         - {{ compiler('cxx') }}
+        - {{ stdlib("c") }}
 
       host:
         # technically this ought to be in the 'build' requirements,
